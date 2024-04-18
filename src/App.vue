@@ -2,6 +2,8 @@
 import { store } from "./store";
 import axios from "axios";
 
+import AppMain from "./components/AppMain.vue";
+
 export default {
 	data() {
 		return {};
@@ -14,10 +16,13 @@ export default {
 			});
 		},
 	},
+	components: { AppMain },
 	created() {
 		this.fetchProjects();
 	},
 };
 </script>
-<template></template>
+<template>
+	<app-main />
+</template>
 <style></style>
