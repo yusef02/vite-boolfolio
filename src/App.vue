@@ -23,6 +23,6 @@ export default {
 };
 </script>
 <template>
-	<app-main />
+	<router-view />
 </template>
 <style></style>
